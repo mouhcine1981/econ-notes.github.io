@@ -9,7 +9,10 @@ Longer-form research, working papers, and policy notes. This list is generated a
 
 **To publish a new paper:** just add a PDF to the `papers` folder, named like `2026-03-your-paper-title.pdf` (four-digit year, two-digit month, then a title with words separated by dashes). It will appear below automatically, newest first, next time the site rebuilds.
 
-{% assign papers = site.static_files | where_exp: "f", "f.path contains '/papers/' and f.extname == '.pdf'" %}
+{% assign pdf_ext = ".pdf" %}
+{% assign papers_folder = "/papers/" %}
+{% assign papers = site.static_files | where_exp: "f", "f.extname == pdf_ext" %}
+{% assign papers = papers | where_exp: "f", "f.path contains papers_folder" %}
 {% assign papers = papers | sort: "name" | reverse %}
 
 <ul class="pub-list">
