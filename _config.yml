@@ -1,0 +1,39 @@
+title: "Your Name Here"
+tagline: "Economic Research & Policy Notes"
+description: >-
+  Applied economic analysis and policy commentary for practitioners,
+  policymakers, and researchers.
+url: "https://yourusername.github.io"
+baseurl: "/econ-notes.github.io"
+
+author:
+  name: "Your Name"
+  email: "you@example.com"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+permalink: /updates/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
