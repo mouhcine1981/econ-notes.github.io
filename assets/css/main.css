@@ -1,0 +1,324 @@
+/* =============================================================
+   DESIGN TOKENS
+   ============================================================= */
+:root {
+  --paper:   #F2F0E8;
+  --paper-2: #ECE9DE;
+  --ink:     #1A2233;
+  --treasury:#1F3D5C;
+  --ochre:   #B8842E;
+  --slate:   #5B6773;
+  --rule:    #D7D1C0;
+
+  --serif: "Spectral", Georgia, "Times New Roman", serif;
+  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono:  "IBM Plex Mono", "SF Mono", Consolas, monospace;
+
+  --max-width: 720px;
+  --gutter: 24px;
+}
+
+/* =============================================================
+   RESET / BASE
+   ============================================================= */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--treasury);
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--ochre); }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--ochre);
+  outline-offset: 2px;
+}
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; color: var(--ink); margin: 0 0 0.4em; }
+p { margin: 0 0 1.1em; }
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* =============================================================
+   EYEBROW / MONO LABELS
+   ============================================================= */
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ochre);
+}
+
+.meta {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--slate);
+}
+
+/* =============================================================
+   SITE HEADER
+   ============================================================= */
+.site-header {
+  padding: 56px 0 28px;
+  border-bottom: none;
+}
+
+.site-header .eyebrow { display: block; margin-bottom: 14px; }
+
+.site-title {
+  font-size: clamp(32px, 5vw, 44px);
+  line-height: 1.1;
+  margin: 0 0 10px;
+}
+.site-title a { color: var(--ink); text-decoration: none; }
+
+.site-tagline {
+  font-family: var(--sans);
+  color: var(--slate);
+  font-size: 16px;
+  max-width: 46ch;
+  margin: 0 0 28px;
+}
+
+/* Signature element: sparkline interrupting the rule */
+.sparkline-rule {
+  position: relative;
+  height: 34px;
+  margin-bottom: 22px;
+}
+.sparkline-rule::before,
+.sparkline-rule::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background: var(--rule);
+  width: calc(50% - 90px);
+}
+.sparkline-rule::before { left: 0; }
+.sparkline-rule::after  { right: 0; }
+.sparkline-rule svg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* =============================================================
+   NAV
+   ============================================================= */
+.site-nav {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 44px;
+}
+.site-nav .wrap {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.site-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  padding-bottom: 2px;
+  margin-right: 22px;
+  border-bottom: 1px solid transparent;
+}
+.site-nav a:last-child { margin-right: 0; }
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--ochre);
+  border-bottom-color: var(--ochre);
+}
+
+/* =============================================================
+   POST LIST (HOME / ARCHIVE)
+   ============================================================= */
+.post-list { list-style: none; margin: 0; padding: 0; }
+
+.post-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.post-item:first-child { padding-top: 0; }
+
+.post-item .meta { display: block; margin-bottom: 8px; }
+.post-item .tag {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 1px 8px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--slate);
+  font-size: 11px;
+}
+
+.post-item h2 {
+  font-size: 23px;
+  margin: 0 0 8px;
+}
+.post-item h2 a { color: var(--ink); text-decoration: none; }
+.post-item h2 a:hover { color: var(--ochre); }
+
+.post-item .excerpt {
+  color: var(--ink);
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.read-more {
+  font-family: var(--mono);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* Featured (first/most recent) post gets a slightly larger treatment */
+.post-item.featured h2 { font-size: 28px; }
+.post-item.featured .excerpt { font-size: 17px; }
+
+/* =============================================================
+   SINGLE POST / PAGE
+   ============================================================= */
+.post-header, .page-header { padding: 48px 0 8px; }
+.post-header .eyebrow, .page-header .eyebrow { margin-bottom: 14px; display: block; }
+
+.post-title, .page-title {
+  font-size: clamp(28px, 4.5vw, 38px);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.post-meta {
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.post-content, .page-content {
+  font-size: 18px;
+  padding-bottom: 60px;
+}
+.post-content h2 { font-size: 24px; margin-top: 1.6em; }
+.post-content h3 { font-size: 19px; margin-top: 1.4em; }
+.post-content blockquote {
+  margin: 1.6em 0;
+  padding: 2px 0 2px 20px;
+  border-left: 3px solid var(--ochre);
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--treasury);
+}
+.post-content code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: var(--paper-2);
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+.post-content pre {
+  background: var(--paper-2);
+  padding: 16px;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+.post-content pre code { background: none; padding: 0; }
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin: 1.6em 0;
+}
+.post-content th, .post-content td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+}
+.post-content th {
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--slate);
+}
+.post-content img { max-width: 100%; height: auto; }
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2.4em 0;
+}
+
+/* =============================================================
+   RESEARCH / PUBLICATIONS LIST
+   ============================================================= */
+.pub-list { list-style: none; margin: 0; padding: 0; }
+.pub-item {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.pub-item .pub-title { font-family: var(--serif); font-size: 17px; color: var(--ink); }
+.pub-item .pub-venue { color: var(--slate); font-size: 14px; }
+
+/* =============================================================
+   FOOTER
+   ============================================================= */
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 32px 0 60px;
+  margin-top: 20px;
+}
+.site-footer .bio {
+  font-size: 15px;
+  color: var(--ink);
+  max-width: 56ch;
+  margin-bottom: 18px;
+}
+.footer-links {
+  font-family: var(--mono);
+  font-size: 13px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.footer-links a { color: var(--treasury); text-decoration: none; margin-right: 18px; }
+.footer-links a:last-child { margin-right: 0; }
+.footer-links a:hover { color: var(--ochre); }
+.copyright {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--slate);
+  margin-top: 18px;
+}
+
+/* =============================================================
+   RESPONSIVE
+   ============================================================= */
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .site-header { padding-top: 40px; }
+  .sparkline-rule::before,
+  .sparkline-rule::after { width: calc(50% - 60px); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}
