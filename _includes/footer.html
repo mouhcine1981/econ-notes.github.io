@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="bio">
+      {{ site.title }} is a research site publishing applied economic
+      analysis and policy commentary. Views expressed are the author's own.
+    </p>
+    <div class="footer-links">
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/research/' | relative_url }}">Research</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a>
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    </div>
+    <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
+  </div>
+</footer>
