@@ -1,4 +1,4 @@
-title: "Your Name Here"
+title: "Mouhcine Guettabi, PhD"
 tagline: "Economic Research & Policy Notes"
 description: >-
   Applied economic analysis and policy commentary for practitioners,
@@ -7,8 +7,8 @@ url: "https://yourusername.github.io"
 baseurl: "/econ-notes.github.io"
 
 author:
-  name: "Your Name"
-  email: "you@example.com"
+  name: "Mouhcine Guettabi"
+  email: "guettabim@uncw.edu"
 
 markdown: kramdown
 kramdown:
