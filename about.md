@@ -5,7 +5,7 @@ eyebrow: Who writes this
 permalink: /about/
 ---
 
-*(Replace this paragraph with a real bio: your name, current role or affiliation, areas of research or policy focus, and any relevant credentials — PhD field, prior positions, etc. Practitioners and policymakers skimming this page are usually deciding, in about ten seconds, whether your background gives your analysis credibility on the topics you cover. Lead with that.)*
+*(Mouhcine Guettabi is the Ronald and Cynthia McNeill Distinguished Professor of Business, Professor of Economics, and Regional Economist at UNCW.)*
 
 ## Research interests
 
