@@ -21,7 +21,8 @@ Longer-form research, working papers, and policy notes. Each list below is gener
 <ul class="pub-list">
 {% for file in academic_papers %}
   {% assign name_no_ext = file.name | remove: '.pdf' %}
-  {% assign parts = name_no_ext | split: '-' %}
+  {% assign normalized_name = name_no_ext | replace: '_', '-' | replace: ' ', '-' %}
+  {% assign parts = normalized_name | split: '-' %}
   {% assign part_count = parts | size %}
 
   {% if part_count >= 3 %}
@@ -69,7 +70,8 @@ Longer-form research, working papers, and policy notes. Each list below is gener
 <ul class="pub-list">
 {% for file in applied_papers %}
   {% assign name_no_ext = file.name | remove: '.pdf' %}
-  {% assign parts = name_no_ext | split: '-' %}
+  {% assign normalized_name = name_no_ext | replace: '_', '-' | replace: ' ', '-' %}
+  {% assign parts = normalized_name | split: '-' %}
   {% assign part_count = parts | size %}
 
   {% if part_count >= 3 %}
