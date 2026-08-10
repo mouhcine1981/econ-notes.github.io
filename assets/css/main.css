@@ -5,7 +5,8 @@
   --paper:   #F2F0E8;
   --paper-2: #ECE9DE;
   --ink:     #1A2233;
-  --treasury:#1F3D5C;
+  --navy:    #003366;
+  --teal:    #007680;
   --ochre:   #B8842E;
   --slate:   #5B6773;
   --rule:    #D7D1C0;
@@ -35,7 +36,7 @@ body {
 }
 
 a {
-  color: var(--treasury);
+  color: var(--teal);
   text-decoration-color: var(--rule);
   text-underline-offset: 3px;
 }
@@ -45,7 +46,7 @@ a:focus-visible, button:focus-visible {
   outline-offset: 2px;
 }
 
-h1, h2, h3 { font-family: var(--serif); font-weight: 600; color: var(--ink); margin: 0 0 0.4em; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; color: var(--navy); margin: 0 0 0.4em; }
 p { margin: 0 0 1.1em; }
 
 .wrap {
@@ -86,7 +87,7 @@ p { margin: 0 0 1.1em; }
   line-height: 1.1;
   margin: 0 0 10px;
 }
-.site-title a { color: var(--ink); text-decoration: none; }
+.site-title a { color: var(--navy); text-decoration: none; }
 
 .site-tagline {
   font-family: var(--sans);
@@ -176,7 +177,7 @@ p { margin: 0 0 1.1em; }
   font-size: 23px;
   margin: 0 0 8px;
 }
-.post-item h2 a { color: var(--ink); text-decoration: none; }
+.post-item h2 a { color: var(--navy); text-decoration: none; }
 .post-item h2 a:hover { color: var(--ochre); }
 
 .post-item .excerpt {
@@ -225,7 +226,7 @@ p { margin: 0 0 1.1em; }
   border-left: 3px solid var(--ochre);
   font-family: var(--serif);
   font-style: italic;
-  color: var(--treasury);
+  color: var(--teal);
 }
 .post-content code {
   font-family: var(--mono);
@@ -274,7 +275,7 @@ p { margin: 0 0 1.1em; }
   padding: 18px 0;
   border-bottom: 1px solid var(--rule);
 }
-.pub-item .pub-title { font-family: var(--serif); font-size: 17px; color: var(--ink); }
+.pub-item .pub-title { font-family: var(--serif); font-size: 17px; color: var(--navy); }
 .pub-item .pub-venue { color: var(--slate); font-size: 14px; }
 
 /* =============================================================
@@ -298,7 +299,7 @@ p { margin: 0 0 1.1em; }
   gap: 18px;
   flex-wrap: wrap;
 }
-.footer-links a { color: var(--treasury); text-decoration: none; margin-right: 18px; }
+.footer-links a { color: var(--teal); text-decoration: none; margin-right: 18px; }
 .footer-links a:last-child { margin-right: 0; }
 .footer-links a:hover { color: var(--ochre); }
 .copyright {
@@ -321,4 +322,63 @@ p { margin: 0 0 1.1em; }
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
+}
+
+/* =============================================================
+   NEWSLETTER SIGNUP
+   ============================================================= */
+.subscribe-box {
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 20px 24px;
+  margin-bottom: 28px;
+}
+.subscribe-label {
+  display: block;
+  font-family: var(--serif);
+  font-size: 17px;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.subscribe-sublabel {
+  font-size: 13px;
+  color: var(--slate);
+  margin-bottom: 12px;
+  display: block;
+}
+.subscribe-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.subscribe-row input[type="email"] {
+  flex: 1;
+  min-width: 180px;
+  padding: 9px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  font-family: var(--sans);
+  font-size: 14px;
+  background: var(--paper);
+  color: var(--ink);
+}
+.subscribe-row input[type="email"]:focus {
+  outline: 2px solid var(--teal);
+  outline-offset: 1px;
+  border-color: var(--teal);
+}
+.subscribe-row input[type="submit"] {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 3px;
+  background: var(--teal);
+  color: white;
+  font-family: var(--mono);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.subscribe-row input[type="submit"]:hover {
+  background: var(--navy);
 }
