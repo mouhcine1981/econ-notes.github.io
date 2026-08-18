@@ -11,7 +11,12 @@ To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or ac
 
 {% assign pdf_ext = ".pdf" %}
 
-## Academic Research
+<div class="research-tabs">
+  <button class="research-tab active" data-target="academic-panel" id="tab-academic">Academic Research</button>
+  <button class="research-tab" data-target="applied-panel" id="tab-applied">Applied Research &amp; Policy Notes</button>
+</div>
+
+<div class="research-panel" id="academic-panel">
 
 {% assign academic_folder = "/papers/academic/" %}
 {% assign academic_papers = site.static_files | where_exp: "f", "f.extname == pdf_ext" %}
@@ -24,7 +29,6 @@ To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or ac
   {% assign normalized_name = name_no_ext | replace: '_', '-' | replace: ' ', '-' %}
   {% assign parts = normalized_name | split: '-' %}
   {% assign part_count = parts | size %}
-
   {% if part_count >= 3 %}
     {% assign paper_year = parts[0] %}
     {% assign paper_month = parts[1] %}
@@ -47,7 +51,6 @@ To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or ac
     {% assign paper_title = name_no_ext | replace: '-', ' ' | replace: '_', ' ' | capitalize %}
     {% assign display_date = file.modified_time | date: "%B %Y" %}
   {% endif %}
-
   <div class="paper-item">
     <span class="paper-date">{{ display_date }}</span>
     <span class="paper-title">{{ paper_title }}</span>
@@ -56,13 +59,15 @@ To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or ac
 {% endfor %}
 </div>
 
-<div class="paper-pagination" id="academic-list-pagination"></div>
-
 {% if academic_papers.size == 0 %}
-<p class="paper-empty">No academic papers uploaded yet. Drop a PDF into <code>papers/academic/</code> to see it appear here.</p>
+<p>No academic papers uploaded yet. Drop a PDF into <code>papers/academic/</code> to see it appear here.</p>
 {% endif %}
 
-## Applied Research &amp; Policy Notes
+<div class="paper-pagination" id="academic-list-pagination"></div>
+
+</div>
+
+<div class="research-panel" id="applied-panel" style="display: none;">
 
 {% assign applied_folder = "/papers/applied/" %}
 {% assign applied_papers = site.static_files | where_exp: "f", "f.extname == pdf_ext" %}
@@ -75,7 +80,6 @@ To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or ac
   {% assign normalized_name = name_no_ext | replace: '_', '-' | replace: ' ', '-' %}
   {% assign parts = normalized_name | split: '-' %}
   {% assign part_count = parts | size %}
-
   {% if part_count >= 3 %}
     {% assign paper_year = parts[0] %}
     {% assign paper_month = parts[1] %}
@@ -98,7 +102,6 @@ To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or ac
     {% assign paper_title = name_no_ext | replace: '-', ' ' | replace: '_', ' ' | capitalize %}
     {% assign display_date = file.modified_time | date: "%B %Y" %}
   {% endif %}
-
   <div class="paper-item">
     <span class="paper-date">{{ display_date }}</span>
     <span class="paper-title">{{ paper_title }}</span>
@@ -107,13 +110,36 @@ To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or ac
 {% endfor %}
 </div>
 
-<div class="paper-pagination" id="applied-list-pagination"></div>
-
 {% if applied_papers.size == 0 %}
-<p class="paper-empty">No applied papers uploaded yet. Drop a PDF into <code>papers/applied/</code> to see it appear here.</p>
+<p>No applied papers uploaded yet. Drop a PDF into <code>papers/applied/</code> to see it appear here.</p>
 {% endif %}
 
+<div class="paper-pagination" id="applied-list-pagination"></div>
+
+</div>
+
 <style>
+.research-tabs {
+  display: flex;
+  gap: 0.5em;
+  margin: 1.5em 0 1em 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.research-tab {
+  padding: 0.6em 1em;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: #666;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+.research-tab.active {
+  color: #222;
+  border-bottom: 2px solid #222;
+  font-weight: 600;
+}
 .paper-item {
   display: flex;
   align-items: baseline;
@@ -159,15 +185,27 @@ To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or ac
 
 <script>
 (function () {
+  // --- Tab toggle ---
+  var tabs = document.querySelectorAll('.research-tab');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      document.querySelectorAll('.research-panel').forEach(function (panel) {
+        panel.style.display = 'none';
+      });
+      document.getElementById(tab.getAttribute('data-target')).style.display = '';
+    });
+  });
+
+  // --- Pagination ---
   function paginateList(listId, paginationId) {
     var list = document.getElementById(listId);
     var pagination = document.getElementById(paginationId);
     if (!list || !pagination) return;
-
     var items = Array.prototype.slice.call(list.getElementsByClassName('paper-item'));
     var perPage = parseInt(list.getAttribute('data-per-page'), 10) || 5;
     var pageCount = Math.ceil(items.length / perPage);
-
     if (pageCount <= 1) return; // nothing to paginate
 
     function showPage(page) {
@@ -189,7 +227,6 @@ To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or ac
       });
       pagination.appendChild(btn);
     }
-
     showPage(1);
   }
 
