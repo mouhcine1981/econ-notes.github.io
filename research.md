@@ -5,16 +5,71 @@ eyebrow: Working papers & policy notes
 permalink: /research/
 ---
 
+Longer-form research, working papers, policy notes, and presentations. Each list below is generated automatically from files in the corresponding folder — no editing this page required.
 
+To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or academic-style working papers) or `papers/applied/` (for practitioner-facing policy briefs and applied notes). To add a presentation, add a PDF or PPTX to `papers/presentations/`. Name it like `2026-03-your-title.pdf` for an automatic date and title, or name it anything if you don't need that.
 
 {% assign pdf_ext = ".pdf" %}
+{% assign pptx_ext = ".pptx" %}
 
 <div class="research-tabs">
-  <button class="research-tab active" data-target="academic-panel" id="tab-academic">Academic Research</button>
-  <button class="research-tab" data-target="applied-panel" id="tab-applied">Applied Research &amp; Policy Notes</button>
+  <button class="research-tab active" data-target="applied-panel" id="tab-applied">Applied Research &amp; Policy Notes</button>
+  <button class="research-tab" data-target="academic-panel" id="tab-academic">Academic Research</button>
+  <button class="research-tab" data-target="presentations-panel" id="tab-presentations">Presentations</button>
 </div>
 
-<div class="research-panel" id="academic-panel">
+<div class="research-panel" id="applied-panel">
+
+{% assign applied_folder = "/papers/applied/" %}
+{% assign applied_papers = site.static_files | where_exp: "f", "f.extname == pdf_ext" %}
+{% assign applied_papers = applied_papers | where_exp: "f", "f.path contains applied_folder" %}
+{% assign applied_papers = applied_papers | sort: "name" | reverse %}
+
+<div class="paper-list" id="applied-list" data-per-page="5">
+{% for file in applied_papers %}
+  {% assign name_no_ext = file.name | remove: '.pdf' %}
+  {% assign normalized_name = name_no_ext | replace: '_', '-' | replace: ' ', '-' %}
+  {% assign parts = normalized_name | split: '-' %}
+  {% assign part_count = parts | size %}
+  {% if part_count >= 3 %}
+    {% assign paper_year = parts[0] %}
+    {% assign paper_month = parts[1] %}
+    {% assign paper_title = "" %}
+    {% assign word_count = 0 %}
+    {% for word in parts %}
+      {% if forloop.index0 >= 2 %}
+        {% assign cap_word = word | capitalize %}
+        {% if word_count == 0 %}
+          {% assign paper_title = cap_word %}
+        {% else %}
+          {% assign paper_title = paper_title | append: " " | append: cap_word %}
+        {% endif %}
+        {% assign word_count = word_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% assign date_str = paper_year | append: "-" | append: paper_month | append: "-01" %}
+    {% assign display_date = date_str | date: "%B %Y" %}
+  {% else %}
+    {% assign paper_title = name_no_ext | replace: '-', ' ' | replace: '_', ' ' | capitalize %}
+    {% assign display_date = file.modified_time | date: "%B %Y" %}
+  {% endif %}
+  <div class="paper-item">
+    <span class="paper-date">{{ display_date }}</span>
+    <span class="paper-title">{{ paper_title }}</span>
+    <a class="paper-link" href="{{ file.path | relative_url }}">PDF</a>
+  </div>
+{% endfor %}
+</div>
+
+{% if applied_papers.size == 0 %}
+<p>No applied papers uploaded yet. Drop a PDF into <code>papers/applied/</code> to see it appear here.</p>
+{% endif %}
+
+<div class="paper-pagination" id="applied-list-pagination"></div>
+
+</div>
+
+<div class="research-panel" id="academic-panel" style="display: none;">
 
 <h3>Published Journal Articles</h3>
 
@@ -171,23 +226,27 @@ permalink: /research/
 </div>
 
 {% if academic_papers.size == 0 %}
-<p></p>
+<p>No working paper PDFs uploaded yet. Drop a PDF into <code>papers/academic/</code> to see it appear here.</p>
 {% endif %}
 
 <div class="paper-pagination" id="academic-list-pagination"></div>
 
 </div>
 
-<div class="research-panel" id="applied-panel" style="display: none;">
+<div class="research-panel" id="presentations-panel" style="display: none;">
 
-{% assign applied_folder = "/papers/applied/" %}
-{% assign applied_papers = site.static_files | where_exp: "f", "f.extname == pdf_ext" %}
-{% assign applied_papers = applied_papers | where_exp: "f", "f.path contains applied_folder" %}
-{% assign applied_papers = applied_papers | sort: "name" | reverse %}
+{% assign pres_folder = "/papers/presentations/" %}
+{% assign pres_pdfs = site.static_files | where_exp: "f", "f.extname == pdf_ext" %}
+{% assign pres_pdfs = pres_pdfs | where_exp: "f", "f.path contains pres_folder" %}
+{% assign pres_pptx = site.static_files | where_exp: "f", "f.extname == pptx_ext" %}
+{% assign pres_pptx = pres_pptx | where_exp: "f", "f.path contains pres_folder" %}
+{% assign presentations = pres_pdfs | concat: pres_pptx %}
+{% assign presentations = presentations | sort: "name" | reverse %}
 
-<div class="paper-list" id="applied-list" data-per-page="5">
-{% for file in applied_papers %}
-  {% assign name_no_ext = file.name | remove: '.pdf' %}
+<div class="paper-list" id="presentations-list" data-per-page="5">
+{% for file in presentations %}
+  {% assign file_ext = file.extname %}
+  {% assign name_no_ext = file.name | remove: file_ext %}
   {% assign normalized_name = name_no_ext | replace: '_', '-' | replace: ' ', '-' %}
   {% assign parts = normalized_name | split: '-' %}
   {% assign part_count = parts | size %}
@@ -213,19 +272,23 @@ permalink: /research/
     {% assign paper_title = name_no_ext | replace: '-', ' ' | replace: '_', ' ' | capitalize %}
     {% assign display_date = file.modified_time | date: "%B %Y" %}
   {% endif %}
+  {% assign link_label = "PDF" %}
+  {% if file_ext == ".pptx" %}
+    {% assign link_label = "Slides" %}
+  {% endif %}
   <div class="paper-item">
     <span class="paper-date">{{ display_date }}</span>
     <span class="paper-title">{{ paper_title }}</span>
-    <a class="paper-link" href="{{ file.path | relative_url }}">PDF</a>
+    <a class="paper-link" href="{{ file.path | relative_url }}">{{ link_label }}</a>
   </div>
 {% endfor %}
 </div>
 
-{% if applied_papers.size == 0 %}
-<p>No applied papers uploaded yet. Drop a PDF into <code>papers/applied/</code> to see it appear here.</p>
+{% if presentations.size == 0 %}
+<p>No presentations uploaded yet. Drop a PDF or PPTX into <code>papers/presentations/</code> to see it appear here.</p>
 {% endif %}
 
-<div class="paper-pagination" id="applied-list-pagination"></div>
+<div class="paper-pagination" id="presentations-list-pagination"></div>
 
 </div>
 
@@ -341,9 +404,9 @@ permalink: /research/
     showPage(1);
   }
 
+  paginateList('applied-list', 'applied-list-pagination');
   paginateList('academic-journal-list', 'academic-journal-pagination');
   paginateList('academic-list', 'academic-list-pagination');
-  paginateList('applied-list', 'applied-list-pagination');
+  paginateList('presentations-list', 'presentations-list-pagination');
 })();
 </script>
-
