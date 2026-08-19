@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Applied Reports, Academic research, and Presentations
-eyebrow: Working papers & policy notes
+eyebrow: 
 permalink: /research/
 ---
 
