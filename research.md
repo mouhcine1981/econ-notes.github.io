@@ -5,9 +5,7 @@ eyebrow: Working papers & policy notes
 permalink: /research/
 ---
 
-Longer-form research, working papers, and policy notes. Each list below is generated automatically from PDFs in the corresponding folder — no editing this page required.
 
-To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or academic-style working papers) or `papers/applied/` (for practitioner-facing policy briefs and applied notes). Name it like `2026-03-your-paper-title.pdf` for an automatic date and title, or name it anything if you don't need that.
 
 {% assign pdf_ext = ".pdf" %}
 
