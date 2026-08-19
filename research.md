@@ -1,13 +1,10 @@
 ---
 layout: page
-title: Research
+title: Applied Reports, Academic research, and Presentations
 eyebrow: Working papers & policy notes
 permalink: /research/
 ---
 
-Longer-form research, working papers, policy notes, and presentations. Each list below is generated automatically from files in the corresponding folder — no editing this page required.
-
-To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or academic-style working papers) or `papers/applied/` (for practitioner-facing policy briefs and applied notes). To add a presentation, add a PDF or PPTX to `papers/presentations/`. Name it like `2026-03-your-title.pdf` for an automatic date and title, or name it anything if you don't need that.
 
 {% assign pdf_ext = ".pdf" %}
 {% assign pptx_ext = ".pptx" %}
