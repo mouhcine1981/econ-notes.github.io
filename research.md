@@ -171,7 +171,7 @@ permalink: /research/
 </div>
 
 {% if academic_papers.size == 0 %}
-<p>No working paper PDFs uploaded yet. Drop a PDF into <code>papers/academic/</code> to see it appear here.</p>
+<p></p>
 {% endif %}
 
 <div class="paper-pagination" id="academic-list-pagination"></div>
