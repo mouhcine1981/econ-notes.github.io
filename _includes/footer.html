@@ -1,27 +1,4 @@
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="subscribe-box">
-      <form action="https://buttondown.com/api/emails/embed-subscribe/YOUR-BUTTONDOWN-USERNAME" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/YOUR-BUTTONDOWN-USERNAME', 'popupwindow')">
-        <label for="bd-email" class="subscribe-label">Get new updates by email</label>
-        <span class="subscribe-sublabel">One email whenever a new post or paper goes up. No spam, unsubscribe anytime.</span>
-        <div class="subscribe-row">
-          <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
-          <input type="submit" value="Subscribe">
-        </div>
-      </form>
-    </div>
+{{ site.title }} is a research site publishing applied economic analysis and policy commentary. Views expressed are the author's own.
 
-    <p class="bio">
-      {{ site.title }} is a research site publishing applied economic
-      analysis and policy commentary. Views expressed are the author's own.
-    </p>
-    <div class="footer-links">
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/research/' | relative_url }}">Research</a>
-      <a href="{{ '/contact/' | relative_url }}">Contact</a>
-      <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a>
-      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-    </div>
-    <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
-  </div>
-</footer>
+About Research Contact RSS Feed {{ site.author.email }}
+© {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.
