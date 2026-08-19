@@ -9,7 +9,6 @@ For press inquiries, speaking requests, data questions, or corrections, reach ou
 
 **Email:** [{{ site.author.email }}](mailto:{{ site.author.email }})
 
-*(Add any other contact channels that make sense — LinkedIn, X/Twitter, institutional affiliation page, a scheduling link, etc. Keep this page short; the point is to make it effortless for a journalist or policymaker's staffer to reach you.)*
 
 ## Media & citation
 
