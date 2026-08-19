@@ -5,7 +5,9 @@ eyebrow: Working papers & policy notes
 permalink: /research/
 ---
 
+Longer-form research, working papers, and policy notes. Each list below is generated automatically from PDFs in the corresponding folder — no editing this page required.
 
+To publish a new paper: add a PDF to `papers/academic/` (for peer-reviewed or academic-style working papers) or `papers/applied/` (for practitioner-facing policy briefs and applied notes). Name it like `2026-03-your-paper-title.pdf` for an automatic date and title, or name it anything if you don't need that.
 
 {% assign pdf_ext = ".pdf" %}
 
@@ -15,6 +17,119 @@ permalink: /research/
 </div>
 
 <div class="research-panel" id="academic-panel">
+
+<h3>Published Journal Articles</h3>
+
+<div class="paper-list" id="academic-journal-list" data-per-page="5">
+
+<div class="paper-item">
+  <span class="paper-date">2025</span>
+  <span class="paper-title">Guettabi, M., Arnold, R.I., &amp; Ferucci, E.D. "On telemedicine and healthcare spending." <em>International Journal of Circumpolar Health</em>, 84(1), 2489195.</span>
+  <a class="paper-link" href="https://doi.org/10.1080/22423982.2025.2489195" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2024</span>
+  <span class="paper-title">Guettabi, M. "Good Red Dog: The Long Term Economic Impact of Mining Activity in Rural Alaska." <em>Review of Regional Studies</em>, 54, 142–162.</span>
+  <a class="paper-link" href="https://doi.org/10.52324/001c.123162" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2023</span>
+  <span class="paper-title">Guettabi, M., &amp; Witman, A. "Universal cash transfers and prescription utilization: Evidence from the Alaska permanent fund dividend." <em>Journal of Health Economics</em>, 90, 102758.</span>
+  <a class="paper-link" href="https://doi.org/10.1016/j.jhealeco.2023.102758" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2023</span>
+  <span class="paper-title">Bibler, A., Guettabi, M., &amp; Reimer, M. "Universal Cash Transfers and Labor Market Outcomes." <em>Journal of Policy Analysis and Management</em>, 42(1), 198–224.</span>
+  <a class="paper-link" href="https://doi.org/10.1002/pam.22455" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2021</span>
+  <span class="paper-title">Watson, B., Reimer, M., Guettabi, M., &amp; Haynie, A. "Commercial fisheries and local economies." <em>Journal of Environmental Economics and Management</em>, 106, 102419.</span>
+  <a class="paper-link" href="https://doi.org/10.1016/j.jeem.2021.102419" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2020</span>
+  <span class="paper-title">Guettabi, M., &amp; James, A. "Who benefits from an oil boom? Evidence from a unique Alaskan data set." <em>Resource and Energy Economics</em>, 62, 101200.</span>
+  <a class="paper-link" href="https://doi.org/10.1016/j.reseneeco.2020.101200" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2020</span>
+  <span class="paper-title">Watson, B., Guettabi, M., &amp; Reimer, M. "Universal Cash and Crime." <em>Review of Economics and Statistics</em>, 102(4), 678–689.</span>
+  <a class="paper-link" href="https://doi.org/10.1162/rest_a_00834" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2018</span>
+  <span class="paper-title">Guettabi, M., &amp; Munasib, A. "Stand Your Ground laws, homicides and gun deaths." <em>Regional Studies</em>, 52(9), 1250–1260.</span>
+  <a class="paper-link" href="https://doi.org/10.1080/00343404.2017.1371846" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2018</span>
+  <span class="paper-title">Guettabi, M., &amp; Munasib, A. "Is there a Trade-off between Remote Living and Healthy Living? The Impact of Remoteness on Body Weight." <em>Review of Regional Studies</em>, 48(2), 173–192.</span>
+  <a class="paper-link" href="https://rrs.scholasticahq.com/article/7998-is-there-a-tradeoff-between-remote-living-and-healthy-living-the-impact-of-remoteness-on-body-weight" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2017</span>
+  <span class="paper-title">Reimer, M., Guettabi, M., &amp; Tanaka, C. "The Impact of a severance tax change on Alaskan Oil Activity." <em>Energy Policy</em>, 107, 448–458.</span>
+  <a class="paper-link" href="https://doi.org/10.1016/j.enpol.2017.05.014" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2016</span>
+  <span class="paper-title">Guettabi, M., Little, J., Greenberg, J., &amp; Joly, K. "Evaluating Potential Economic Effects of an Industrial Road on Subsistence in North-Central Alaska." <em>Arctic</em>, 69(3), 305–317.</span>
+  <a class="paper-link" href="https://doi.org/10.14430/arctic4583" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2015</span>
+  <span class="paper-title">Guettabi, M., &amp; Munasib, A. "The Impact of Obesity on Consumer Bankruptcy." <em>Economics &amp; Human Biology</em>, 17(3), 208–224.</span>
+  <a class="paper-link" href="https://doi.org/10.1016/j.ehb.2014.11.003" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2014</span>
+  <span class="paper-title">Rickman, D., &amp; Guettabi, M. "The Great Recession and Nonmetropolitan America." <em>Journal of Regional Science</em>, 51(5), 863–879.</span>
+  <a class="paper-link" href="https://doi.org/10.1111/jors.12140" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2014</span>
+  <span class="paper-title">Guettabi, M., &amp; Munasib, A. "Urban Sprawl, Obesogenic Environment, and Child Weight." <em>Journal of Regional Science</em>, 54(3), 378–401.</span>
+  <a class="paper-link" href="https://doi.org/10.1111/jors.12123" target="_blank" rel="noopener">Link</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">2014</span>
+  <span class="paper-title">Guettabi, M., &amp; Munasib, A. "Space Obesity: The Effect of Remoteness on County Obesity." <em>Growth and Change</em>, 45(4), 518–548.</span>
+  <a class="paper-link" href="https://doi.org/10.1111/grow.12061" target="_blank" rel="noopener">Link</a>
+</div>
+
+</div>
+
+<div class="paper-pagination" id="academic-journal-pagination"></div>
+
+<h3>Editor-Reviewed Publications</h3>
+
+<div class="paper-list" id="academic-editor-list" data-per-page="5">
+
+<div class="paper-item">
+  <span class="paper-date">2015</span>
+  <span class="paper-title">"The Determinants of Small Business Success in Alaska: A Special Focus on the Creative Class." <em>Economic Development Journal</em>, Spring 2015.</span>
+</div>
+
+</div>
+
+<hr>
+
+<h3>Working Papers</h3>
 
 {% assign academic_folder = "/papers/academic/" %}
 {% assign academic_papers = site.static_files | where_exp: "f", "f.extname == pdf_ext" %}
@@ -58,7 +173,7 @@ permalink: /research/
 </div>
 
 {% if academic_papers.size == 0 %}
-<p>No academic papers uploaded yet. Drop a PDF into <code>papers/academic/</code> to see it appear here.</p>
+<p>No working paper PDFs uploaded yet. Drop a PDF into <code>papers/academic/</code> to see it appear here.</p>
 {% endif %}
 
 <div class="paper-pagination" id="academic-list-pagination"></div>
@@ -146,7 +261,7 @@ permalink: /research/
   border-bottom: 1px solid #e5e5e5;
 }
 .paper-date {
-  min-width: 8em;
+  min-width: 4em;
   color: #666;
   font-size: 0.9em;
 }
@@ -228,6 +343,7 @@ permalink: /research/
     showPage(1);
   }
 
+  paginateList('academic-journal-list', 'academic-journal-pagination');
   paginateList('academic-list', 'academic-list-pagination');
   paginateList('applied-list', 'applied-list-pagination');
 })();
