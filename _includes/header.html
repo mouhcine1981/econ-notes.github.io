@@ -3,7 +3,6 @@
     <span class="eyebrow">{{ site.tagline }}</span>
     <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
     <p class="site-tagline">{{ site.description }}</p>
-
     <div class="sparkline-rule" aria-hidden="true">
       <svg width="180" height="34" viewBox="0 0 180 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <polyline points="0,17 18,22 34,10 50,19 66,6 82,14 98,24 114,12 130,17 146,8 162,20 180,15"
@@ -11,18 +10,20 @@
       </svg>
     </div>
   </div>
-
   <nav class="site-nav">
     <div class="wrap">
       {% assign home_url = '/' | relative_url %}
       {% assign research_url = '/research/' | relative_url %}
+      {% assign videos_url = '/videos/' | relative_url %}
+      {% assign media_url = '/media/' | relative_url %}
       {% assign about_url = '/about/' | relative_url %}
       {% assign contact_url = '/contact/' | relative_url %}
       <a href="{{ home_url }}" {% if page.url == home_url %}class="active"{% endif %}>Updates</a>
       <a href="{{ research_url }}" {% if page.url == research_url %}class="active"{% endif %}>Research</a>
+      <a href="{{ videos_url }}" {% if page.url == videos_url %}class="active"{% endif %}>Videos</a>
+      <a href="{{ media_url }}" {% if page.url == media_url %}class="active"{% endif %}>Media</a>
       <a href="{{ about_url }}" {% if page.url == about_url %}class="active"{% endif %}>About</a>
       <a href="{{ contact_url }}" {% if page.url == contact_url %}class="active"{% endif %}>Contact</a>
-      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
     </div>
   </nav>
 </header>
