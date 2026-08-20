@@ -22,8 +22,10 @@ Wilmington's year-to-year pattern generally tracks the state's, but education an
 
 ![Wilmington jobs added by sector, year by year]({{ '/assets/images/I2_wilmington_jobs_added_by_sector_annual.png' | relative_url }})
 
-Leisure and hospitality's gains have narrowed most years since its 2020 to 2021 rebound, from about 5,000 jobs that year down to roughly 500 in the most recent year. The most recent year was mixed for the sector overall: trade and transportation and information both lost a small number of jobs, while education and health services and leisure and hospitality still added jobs.
+Mining, logging, and construction, a small sector in Wilmington's economy but a locally important one, has been remarkably steady: it added jobs in six of the last seven years, including four separate years where it added the same 700 jobs. It never posted a loss over this period, a level of consistency none of Wilmington's other sectors matched.
+
+Leisure and hospitality's gains have narrowed most years since its 2020 to 2021 rebound, from about 5,000 jobs that year down to roughly 500 in the most recent year. The most recent year was mixed for the broader economy: trade and transportation and information both lost a small number of jobs, while education and health services, construction, and leisure and hospitality still added jobs.
 
 ## Why it matters
 
-The broad based growth of 2020 to 2022 has given way to something narrower. Growth is still positive overall for both the state and Wilmington, but it now depends more heavily on a smaller set of sectors, particularly education and health services, while manufacturing continues to lose jobs. That concentration is worth watching, since growth that leans on one or two sectors is more exposed if either one slows.
+The broad based growth of 2020 to 2022 has given way to something narrower. Growth is still positive overall for both the state and Wilmington, but it now depends more heavily on a smaller set of sectors, particularly education and health services, while manufacturing continues to lose jobs statewide. Wilmington's construction sector stands out as an exception to that narrowing pattern: it has kept adding jobs steadily through nearly every year in this window, even as other sectors slowed. That combination, a dependable construction sector alongside a narrowing base elsewhere, is worth watching as the broader recovery matures.
