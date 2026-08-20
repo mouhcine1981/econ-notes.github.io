@@ -52,13 +52,15 @@ Wages have grown 52 percent since 2019, among the faster gains in its peer group
 
 ![Employment growth vs. wage growth, Wilmington vs. peers]({{ '/assets/images/H13_wilmington_employment_vs_wage_growth_peers.png' | relative_url }})
 
-## What the local economy is built on
+## Economic diversification
 
-Wilmington's largest structural difference from similarly sized metros is leisure and hospitality, which makes up a larger share of local jobs than the peer average, consistent with a coastal tourism economy. On diversification, how spread employment is across sectors rather than concentrated in one or two, Wilmington ranks in the lower half of its peer group.
-
-![Sector mix, Wilmington vs. peers]({{ '/assets/images/H3_wilmington_sector_mix_vs_peers.png' | relative_url }})
+Comparing every sector's share of employment to the peer-tier average, restricted to metros with fully comparable sector data, Wilmington ranks 21st of 84 peer metros on economic diversification. That means Wilmington's employment is spread more evenly across sectors than roughly 63 of its 84 peers, a moderately diversified economy relative to metros its size, not concentrated in just one or two industries.
 
 ![Sector diversification vs. growth, Wilmington vs. peers]({{ '/assets/images/H14_wilmington_diversification_vs_growth.png' | relative_url }})
+
+Wilmington's biggest structural difference from similarly sized metros is government employment, which makes up 12.1 percent of local jobs versus an 18.8 percent peer-tier average, a gap of nearly 7 percentage points. Manufacturing is underweighted as well, 4.4 percent locally against a 9.3 percent peer average. Leisure and hospitality runs the other direction, 16.9 percent of local employment against a 12.0 percent peer average, consistent with a coastal tourism economy. Every other sector sits within roughly two percentage points of the peer-tier norm.
+
+![Sector mix, Wilmington vs. peers]({{ '/assets/images/H3_wilmington_sector_mix_vs_peers.png' | relative_url }})
 
 For reference, here is where Wilmington's peer group comes from: every U.S. metro grouped by population, with Wilmington's own position marked inside the 250,000 to 500,000 tier.
 
@@ -66,4 +68,4 @@ For reference, here is where Wilmington's peer group comes from: every U.S. metr
 
 ## Summary
 
-Wilmington's job growth has outpaced both its size class and the country as a whole for six straight years, and it accelerated more after COVID than its peer metros did on average. It is currently adding jobs and raising wages at the same time, which most metros its size are not doing. The wage level itself remains a weaker spot: strong growth from a lower starting point still leaves Wilmington below the middle of its peer group on what workers actually earn.
+Wilmington's job growth has outpaced both its size class and the country as a whole for six straight years, and it accelerated more after COVID than its peer metros did on average. It is currently adding jobs and raising wages at the same time, which most metros its size are not doing, and its economy is moderately diversified rather than concentrated in a narrow set of industries. The wage level itself remains a weaker spot: strong growth from a lower starting point still leaves Wilmington below the middle of its peer group on what workers actually earn.
