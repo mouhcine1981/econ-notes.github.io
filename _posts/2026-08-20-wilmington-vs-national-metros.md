@@ -14,7 +14,7 @@ Among the 87 U.S. metros in Wilmington's population range, Wilmington ranks 4th 
 
 ![Wilmington in the full national distribution of metro employment growth]({{ '/assets/images/H2_wilmington_national_distribution.png' | relative_url }})
 
-This isn't just a one-year result. Wilmington's rank among its peers has moved from 22nd during the initial COVID shock to inside the top 10 for each of the last six years. Nationally, it has spent the last several years in the top 15 percent of all U.S. metros.
+Wilmington has held a top-10 rank among its peer metros in each of the last six years, moving up from 22nd during the initial COVID shock. Nationally, it has spent the last several years in the top 15 percent of all U.S. metros.
 
 ![Wilmington's rank among peers, year by year]({{ '/assets/images/H6_wilmington_peer_rank_history.png' | relative_url }})
 
