@@ -5,7 +5,7 @@ eyebrow: In the press
 permalink: /media/
 ---
 
-Print and radio coverage, commentary, and quarterly interviews.
+Print, radio, TV, and podcast coverage, commentary, and quarterly interviews.
 
 <div class="paper-list">
 
@@ -13,6 +13,12 @@ Print and radio coverage, commentary, and quarterly interviews.
   <span class="paper-date">Aug 2026</span>
   <span class="paper-title">WHQR &mdash; "Economic Update: Jobless growth, de-listings in the housing market and steady economic growth in Wilmington."</span>
   <a class="paper-link" href="https://www.whqr.org/local/2026-08-07/economic-update-jobless-growth-de-listings-in-the-housing-market-and-steady-economic-growth-in-wilmington" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">Aug 2026</span>
+  <span class="paper-title">WECT &mdash; "Is your student loan repayment plan changing? What borrowers need to know."</span>
+  <a class="paper-link" href="https://www.wect.com/2026/08/04/is-your-student-loan-repayment-changing-what-borrowers-need-know/" target="_blank" rel="noopener">Read</a>
 </div>
 
 <div class="paper-item">
@@ -46,6 +52,12 @@ Print and radio coverage, commentary, and quarterly interviews.
 </div>
 
 <div class="paper-item">
+  <span class="paper-date">Apr 2026</span>
+  <span class="paper-title">WECT &mdash; "Gas prices surge as Iran tensions disrupt oil markets."</span>
+  <a class="paper-link" href="https://www.wect.com/2026/04/01/gas-prices-surge-iran-tensions-disrupt-oil-markets/" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
   <span class="paper-date">Mar 2026</span>
   <span class="paper-title">WilmingtonBiz &mdash; "Economists highlight uncertain outlook for local housing, construction," from the Cape Fear Realtors/Home Builders forecast event.</span>
   <a class="paper-link" href="https://www.wilmingtonbiz.com/real_estate_-_residential/2026/03/31/economists_highlight_uncertain_outlook_for_local_housing_construction/27343" target="_blank" rel="noopener">Read</a>
@@ -64,15 +76,33 @@ Print and radio coverage, commentary, and quarterly interviews.
 </div>
 
 <div class="paper-item">
+  <span class="paper-date">Jan 2026</span>
+  <span class="paper-title">WECT &mdash; "UNCW economist weighs in as inflation holds steady at 2.7%, grocery costs climb."</span>
+  <a class="paper-link" href="https://www.wect.com/2026/01/15/uncw-economist-weighs-inflation-holds-steady-27-grocery-costs-climb/" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">Jan 2026</span>
+  <span class="paper-title">WWAY &mdash; "Paper over plastic, using cash could help you save money."</span>
+  <a class="paper-link" href="https://www.wwaytv3.com/paper-over-plastic-using-cash-could-help-you-save-money/" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
   <span class="paper-date">May 2026</span>
   <span class="paper-title">UNCW News &mdash; "Man Behind the Metrics: Mouhcine Guettabi," a profile on his work as regional economist.</span>
   <a class="paper-link" href="https://uncw.edu/news/2026/05/man-behind-the-metrics-mouhcine-guettabi" target="_blank" rel="noopener">Read</a>
 </div>
 
 <div class="paper-item">
-  <span class="paper-date">Apr 2025</span>
-  <span class="paper-title">WHQR &mdash; "As Wilmington's economy develops, new jobs are largely going to outsiders."</span>
-  <a class="paper-link" href="https://www.whqr.org/local/2025-04-08/as-wilmingtons-economy-develops-new-jobs-are-largely-going-to-outsiders" target="_blank" rel="noopener">Read</a>
+  <span class="paper-date">Oct 2025</span>
+  <span class="paper-title">WWAY &mdash; "Economic Outlook Conference addresses national trends, local growth pressures."</span>
+  <a class="paper-link" href="https://www.wwaytv3.com/economic-outlook-conference-addresses-national-trends-local-growth-pressures/" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">Oct 2024</span>
+  <span class="paper-title">WWAY &mdash; "Economic study shows Cape Fear economy steadily growing but slowdown is expected."</span>
+  <a class="paper-link" href="https://www.wwaytv3.com/economic-study-shows-cape-fear-economy-steadily-growing-but-slowdown-is-expected/" target="_blank" rel="noopener">Read</a>
 </div>
 
 <div class="paper-item">
@@ -88,6 +118,30 @@ Print and radio coverage, commentary, and quarterly interviews.
 </div>
 
 <div class="paper-item">
+  <span class="paper-date">Sep 2024</span>
+  <span class="paper-title">WWAY &mdash; "Economist warns about disruption as potential ports strike looms."</span>
+  <a class="paper-link" href="https://www.wwaytv3.com/economist-warns-of-disruption-as-potential-ports-strike-looms/" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">Aug 2024</span>
+  <span class="paper-title">The Economics Show with Soumaya Keynes (Financial Times) &mdash; "How much cash would it take to quit your job?" featuring an interview on his Alaska Permanent Fund Dividend research, with FT columnist Pilita Clark.</span>
+  <a class="paper-link" href="https://shows.acast.com/the-economics-show-with-soumaya-keynes/episodes/how-much-cash-would-it-take-to-quit-your-job-with-pilita-cla" target="_blank" rel="noopener">Listen</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">Apr 2025</span>
+  <span class="paper-title">WHQR &mdash; "As Wilmington's economy develops, new jobs are largely going to outsiders."</span>
+  <a class="paper-link" href="https://www.whqr.org/local/2025-04-08/as-wilmingtons-economy-develops-new-jobs-are-largely-going-to-outsiders" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">Mar 2024</span>
+  <span class="paper-title">WWAY &mdash; "Struggling breweries, or businesses in general: Economist responds."</span>
+  <a class="paper-link" href="https://www.wwaytv3.com/struggling-breweries-or-businesses-in-general-economist-responds/" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
   <span class="paper-date">Jan 2024</span>
   <span class="paper-title">WilmingtonBiz &mdash; "From fintech to film, Wilmington executives talk industry outlooks," Chamber of Commerce Economic Summit.</span>
   <a class="paper-link" href="https://www.wilmingtonbiz.com/in_other_news/2024/01/18/from_fintech_to_film_wilmington_executives_talk_industry_outlooks/25213" target="_blank" rel="noopener">Read</a>
@@ -100,14 +154,38 @@ Print and radio coverage, commentary, and quarterly interviews.
 </div>
 
 <div class="paper-item">
+  <span class="paper-date">Oct 2023</span>
+  <span class="paper-title">WWAY &mdash; "UNCW Professor discusses the economy in relation to conflict in the Middle East."</span>
+  <a class="paper-link" href="https://www.wwaytv3.com/the-economy-and-conflict-in-the-middle-east/" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
+  <span class="paper-date">Oct 2023</span>
+  <span class="paper-title">WWAY &mdash; "Economic outlook conference held in Downtown Wilmington."</span>
+  <a class="paper-link" href="https://www.wwaytv3.com/economic-outlook-conference-held-in-downtown-wilmington/" target="_blank" rel="noopener">Read</a>
+</div>
+
+<div class="paper-item">
   <span class="paper-date">Sep 2022</span>
   <span class="paper-title">WilmingtonBiz &mdash; "Economist studies what makes region 'tick'," a profile on joining UNCW.</span>
   <a class="paper-link" href="https://www.wilmingtonbiz.com/more_news/2022/09/16/economist_studies_what_makes_region_%E2%80%98tick%E2%80%99/23638" target="_blank" rel="noopener">Read</a>
 </div>
 
+<div class="paper-item">
+  <span class="paper-date">Aug 2022</span>
+  <span class="paper-title">WWAY &mdash; "Regional economist speaks on federal student loan forgiveness plan's economic impact."</span>
+  <a class="paper-link" href="https://www.wwaytv3.com/regional-economist-speaks-on-federal-student-loan-forgiveness-plans-economic-impact/" target="_blank" rel="noopener">Read</a>
 </div>
 
-<p>He also writes regular columns for the Greater Wilmington Business Journal and delivers a quarterly economic update on WHQR. A full list of UNCW media mentions is maintained at <a href="https://uncw.edu/news/in-the-news/" target="_blank" rel="noopener">UNCW in the News</a>.</p>
+<div class="paper-item">
+  <span class="paper-date">Jan 2023</span>
+  <span class="paper-title">WWAY &mdash; "With large companies announcing layoffs, is a recession looming?"</span>
+  <a class="paper-link" href="https://www.wwaytv3.com/with-large-companies-announcing-layoffs-is-a-recession-looming/" target="_blank" rel="noopener">Read</a>
+</div>
+
+</div>
+
+<p>He also writes regular columns for the Greater Wilmington Business Journal and delivers a quarterly economic update on WHQR. A full list of UNCW media mentions is maintained at <a href="https://uncw.edu/news/in-the-news/" target="_blank" rel="noopener">UNCW in the News</a>, and a full archive of WWAY coverage is at their <a href="https://www.wwaytv3.com/news-tags/mouhcine-guettabi/" target="_blank" rel="noopener">tag page</a>.</p>
 
 <p><em>This list is not comprehensive. If you know of a piece that should be here, <a href="{{ '/contact/' | relative_url }}">get in touch</a>.</em></p>
 
@@ -131,3 +209,4 @@ Print and radio coverage, commentary, and quarterly interviews.
   white-space: nowrap;
 }
 </style>
+
