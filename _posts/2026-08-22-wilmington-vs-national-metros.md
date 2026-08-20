@@ -67,3 +67,4 @@ For reference, here is where Wilmington's peer group comes from: every U.S. metr
 ## Summary
 
 Wilmington's job growth has outpaced both its size class and the country as a whole for six straight years, and it accelerated more after COVID than its peer metros did on average. It is currently adding jobs and raising wages at the same time, which most metros its size are not doing. The wage level itself remains a weaker spot: strong growth from a lower starting point still leaves Wilmington below the middle of its peer group on what workers actually earn.
+
